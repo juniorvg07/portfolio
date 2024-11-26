@@ -1,0 +1,43 @@
+/*===== Work =====*/
+.work_article{
+    background-color: var(--magenta);
+    border-radius: 20px;
+    height: auto;
+}
+.article_card{
+    display: grid;
+    margin: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 16px;
+}
+.article_card h3{
+    color: var(--magenta);
+    padding-bottom: 0.5rem;
+}
+.article_card span{
+    padding-top: 0.75rem;
+}
+
+@media screen and (max-width: 480px) {
+    /*===== Work =====*/
+    .work_section{
+        gap: 2rem;
+    }
+    .work_image{
+        width: 250px;
+        height: 150px;
+    }
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .work_section{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}

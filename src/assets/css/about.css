@@ -1,0 +1,29 @@
+.about-description span{
+    text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+    #about-pic{
+        width: 180px;
+    }
+    .about_section{
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #about-pic{
+        width: 280px;
+    }
+    .about_section{
+        display: flex;
+        gap: 2rem;
+    }
+    .about-description{
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}

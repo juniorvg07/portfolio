@@ -1,0 +1,58 @@
+.contact_form{
+    display: grid;
+    gap: 1.5rem;
+    align-content: center;
+}
+.contact_input{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+.contact_button{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: var(--magenta);
+    color: #fff;
+    border-radius: 8px;
+    border-width: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .contact_form{
+        width: 100%;
+        padding: 0 1.25rem;
+    }
+    #contact{
+        padding-bottom: 2rem;
+    }
+    .button_div{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .name-input{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .mail-input{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .text-input{
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+    #text{
+        height: 100%;
+    }
+    .button_div{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}

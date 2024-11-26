@@ -1,0 +1,147 @@
+header{
+    width: 100vw;
+    height: 5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 4px;
+    position: fixed;
+    z-index: 100;
+    background-color: #ffff;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    text-align: center;
+}
+#head-title{
+    color: var(--magenta);
+    font-weight: var(--font-super-bold);
+}
+ul{
+    list-style: none;
+}
+.element :hover{
+    color: var(--magenta);
+    font-weight: var(--font-bold);
+}
+ul a{
+    font-weight: var(--font-bold);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 1rem;
+    }
+    /*===== Navbar =====*/
+    #menu{
+        font-size: 2rem;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .nav-container{
+        position: fixed;
+        top: 5rem;
+        right: -100%;
+        width: 150px;
+        height: 100%;
+        text-align: center;
+        background-color: var(--magenta);
+        transition: 0.6s;
+    }
+    .open{
+        right: 0;
+        transition: 0.5s;
+    }
+    .navbar-list{
+        display: grid;
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+    .element{
+        margin-top: 2rem;
+    }
+    .element :hover{
+        color: black;
+        font-weight: var(--font-bold);
+    }
+    ul a{
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+    /*===== Navbar =====*/
+    #menu {
+        font-size: 3rem;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .nav-container {
+        position: fixed;
+        top: 5rem;
+        right: -100%;
+        width: 180px;
+        height: 100%;
+        text-align: center;
+        background-color: var(--magenta);
+        transition: 0.6s;
+    }
+
+    .open {
+        right: 0;
+        transition: 0.5s;
+    }
+
+    .navbar-list {
+        display: grid;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    .element {
+        margin-top: 2rem;
+    }
+
+    .element :hover {
+        color: black;
+        font-weight: var(--font-bold);
+    }
+
+    li a {
+        font-size: 1.25rem;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        padding: 1rem 1.5rem;
+    }
+    h1{
+        cursor: pointer;
+        font-size: 1.25rem;
+    }
+    #menu{
+        display: none;
+    }
+    .navbar-list{
+        display: flex;
+        gap: 2rem;
+        margin-right: 1rem;
+    }
+    ul li :hover{
+        background-color: var(--magenta);
+        color: #fff;
+    }
+    li a{
+        cursor: pointer;
+        font-size: 1.25rem;
+    }
+}
